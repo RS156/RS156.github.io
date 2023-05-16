@@ -2777,7 +2777,7 @@ body.is-touch .poptrox-popup .closer {
   .work-item {
     margin: 0 0 2em 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
   }
   .work-item .image {
