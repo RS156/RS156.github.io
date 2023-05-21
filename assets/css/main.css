@@ -2229,9 +2229,18 @@ input[type=button]:disabled,
 #experience p {
   margin-top: 1em;
 }
-#experience header h4 + p {
+#experience header h5 {
+  color: #b2b2b2;
+  font-size: 0.9em;
+}
+#experience header h4 + h5,
+#experience header h5 + h5 {
   margin-top: -1.5em;
-  margin-bottom: 0;
+  margin-bottom: 1.5em;
+}
+#experience header h4 + p,
+#experience header h5 + p {
+  margin-top: -1.5em;
 }
 
 /* Header */
@@ -2635,6 +2644,9 @@ body.is-touch .poptrox-popup .closer {
   #header > .inner {
     margin-bottom: 0;
   }
+  #header h4 {
+    font-size: 1em;
+  }
   /* Footer */
   #footer .copyright li {
     border-left-width: 0;
@@ -2719,9 +2731,30 @@ body.is-touch .poptrox-popup .closer {
     padding: 6em 4em;
     width: 100%;
   }
+  .work-item {
+    margin: 0 0 2em 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .work-item .image {
+    margin: 0 0 1.5em 0;
+  }
+  .work-item h2 {
+    margin: 0 0 0.5em 0;
+  }
+  .work-item p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 0 0 2em 0;
+  }
+  .work-item .work-summary {
+    padding-right: 1.5em;
+  }
+  /* Small */
+  /* XSmall */
 }
-/* Small */
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 980px) and (max-width: 736px) {
   /* Basic */
   h1 {
     font-size: 1.5em;
@@ -2795,8 +2828,7 @@ body.is-touch .poptrox-popup .closer {
     padding-right: 1.5em;
   }
 }
-/* XSmall */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 980px) and (max-width: 480px) {
   /* Header */
   #header {
     padding: 4.5em 1.5em;
